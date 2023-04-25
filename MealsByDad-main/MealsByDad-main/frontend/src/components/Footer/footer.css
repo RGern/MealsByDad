@@ -1,0 +1,92 @@
+/* Default styles */
+footer {
+    background-color: #0C0C0C;
+    color: #aaa;
+    font-size: 1.2rem;
+    padding: 4rem 0;
+  }
+
+  .h3{
+    font-size: 30px;
+  }
+
+  .link:hover{
+  color: white;
+  }
+
+
+
+  .footer{
+   display: flex;
+   height: 1px;
+   background-color: #aaa;
+   width: 100px;
+   margin-bottom: 60px;
+  }
+
+  p{
+    margin-top: 20px;
+  }
+  
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  
+  
+  /* .contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.5rem;
+  } */
+  
+  
+  
+
+  
+  
+  /* Styles for devices with width >= 768px */
+  @media (min-width: 768px) {
+    footer {
+      padding: 4rem;
+    }
+  
+    .footer-info {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  
+    .contact-details {
+      margin-bottom: 0;
+    }
+  }
+  
+  /* Styles for devices with width < 768px */
+  @media (max-width: 767px) {
+    footer {
+      padding: 2rem;
+    }
+  
+    .footer-info {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .contact-details {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+  
+    .phone, .email {
+      margin-bottom: 1rem;
+    }
+  }
+  

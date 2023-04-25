@@ -1,0 +1,101 @@
+/* Image Grid Container */
+.image-grid-container {
+    overflow-x: scroll;
+    padding: 10px;
+  }
+  
+  .space__{
+    justify-content: center;
+    text-align: center;
+    padding-top: 150px;
+    padding-left: 30px;
+    padding-right: 10px;
+
+  }
+  
+  /* Image Grid */
+  .image-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 -10px;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  #reheader{
+    font-size: 32px;
+    font-weight: bold;
+    color: #aaa;
+    
+
+  }
+
+  #tool{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: #bf9b30;
+    font-size: 150px;
+  }
+  
+  /* Image Container */
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    /* width: calc(25% 20px); */
+   
+    height: 200px; 
+    width: 300px;
+    margin: 0 26px;
+    transition: all 0.3s ease;
+  }
+
+  #img{
+    width: 320px;
+    height: 200px;
+
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    opacity: 0;
+    transition: all 0.3s ease;
+
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  /* Hovered State */
+  .image-container:hover {
+    transform: scale(1.05);
+    filter: blur(.5px);
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+
+  #timer{
+    color: black;
+  }
+
+  #convertMeasurement{
+    color: black;
+  }
+
+  #practices{
+    color: black;
+  }
+ 
+  #kitchen{
+    color: black;
+  }
+  
